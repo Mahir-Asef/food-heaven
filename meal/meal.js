@@ -19,7 +19,7 @@ const searchResults=(meals)=>{
     // console.log(meals);
     const searchMeals=document.getElementById('search-results');
     searchMeals.innerHTML='';
-    if(meals.length==-1){
+    if(!meals){
         return alert("Please type a valid food items");
     }else{
     meals.forEach(meal=>{
